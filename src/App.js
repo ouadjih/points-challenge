@@ -33,10 +33,16 @@ function App() {
   }
   return (
     <>
-      <button className="delete" onClick={HandleDelete}>
+      <button 
+          className="delete"
+          onClick={HandleDelete}
+          disabled={points.length === 0}>
         Delete
       </button>
-      <button className="delete" onClick={HandleUndo}>
+      <button 
+          className="delete" 
+          onClick={HandleUndo}
+          disabled={popped.length === 0}>
         Undo
       </button>
 
