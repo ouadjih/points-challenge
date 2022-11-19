@@ -5,7 +5,7 @@ function App() {
   const [points, setPoints] = useState([]);
   const [popped, setPopped] = useState([]);
 
-  function handleCLick(e) {
+  function handleCLick(e) {  //Update points array ( adding new points to points array state)
     setPoints([
       ...points,
       {
